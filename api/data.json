@@ -1,0 +1,12 @@
+{
+  "users":[
+    { "id":1, "name":"Aurélie" },
+    { "id":2, "name":"Kévin" },
+    { "id":3, "name":"Renaud" }
+  ],
+  "comments":[
+    { "id":1, "userId":1, "text":"Il fait beau aujourd'hui" },
+    { "id":2, "userId":2, "text":"Angular c'est trop bien" },
+    { "id":3, "userId":3, "text":"In Code we trust !" }
+  ]
+}
