@@ -21,6 +21,9 @@
       "dom"
     ],
     "paths": {
+      "@ui":[
+        "projects/ui/src/public-api",
+      ],
       "ui": [
         "dist/ui/ui",
         "dist/ui"

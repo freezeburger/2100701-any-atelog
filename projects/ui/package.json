@@ -2,8 +2,10 @@
   "name": "ui",
   "version": "0.0.1",
   "peerDependencies": {
+    "@angular/material": "^11.2.13",
     "@angular/common": "^11.2.14",
-    "@angular/core": "^11.2.14"
+    "@angular/core": "^11.2.14",
+    "@angular/forms": "^11.2.14"
   },
   "dependencies": {
     "tslib": "^2.0.0"
