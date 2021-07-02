@@ -40,22 +40,27 @@ export class UserManagerService implements Manager<UserState>{
 
   login( credentials:Pick<User, 'name' | 'password'>):Observable<boolean>{
 
-    /* this.state.connectedUser = {id:1,name:'Bob'};
+    /*
+    this.state.connectedUser = {id:1,name:'Bob'};
     this.data$.next(this.state);
     // GO HTTP
+    return of(true);
+    */
 
-    return of(true); */
-    const url = this.api + `?name=${credentials.name}`
+    const url = this.api + `?name=${credentials.name}`;
+
     return this.http.get(url).pipe(
         tap(console.warn),
-        map( ([user]) => {
-          if(user) {
-            this.state.connectedUser = user;
-            this.data$.next(this.state);
-          };
-          return !!user;
-        })
+        map( ([user]) =>this.updateConnectedUser(user) )
     )
+  }
+
+  private updateConnectedUser( user:User ){
+      if(user) {
+        this.state.connectedUser = user;
+        this.data$.next(this.state);
+      };
+      return !!user;
   }
 
 }
