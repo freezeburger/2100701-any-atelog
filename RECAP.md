@@ -2,6 +2,8 @@
 
 > Framework Applicatif JavaScript Web (UI)
 
+
+
 # Angular 5  Key Concept
 
 * NgModule         - Structuration du code Angular
@@ -49,3 +51,5 @@
 * Documentation (compodoc) + Commentaire d'entête de fichier
 * Injection de Composant 🦄 (Action)
 * Testing 🦄
+
+# JavaScript Modules
