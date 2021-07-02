@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-login',
   template: `
-    <p>
-      page-login works!
-    </p>
+   <app-page-base>
+   <app-login></app-login>
+   </app-page-base>
   `,
   styles: [
   ]

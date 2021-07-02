@@ -1,1 +1,35 @@
-<p>page-base works!</p>
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-icon-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span class="example-spacer"></span>
+    <span>{{pageTitle | titlecase}}</span>
+  </mat-toolbar-row>
+
+  <mat-toolbar-row>
+    <span>{{subTitle | titlecase}}</span>
+    <span class="example-spacer"></span>
+    <!-- <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button> -->
+  </mat-toolbar-row>
+
+</mat-toolbar>
+
+<mat-drawer-container class="container" autosize>
+
+  <mat-drawer #drawer class="sidenav" mode="side">
+    <mat-list>
+      <mat-list-item *ngFor="let link of navigationLinks">
+        <a [routerLink]="['/', link ] ">{{link | uppercase}}</a>
+      </mat-list-item>
+    </mat-list>
+  </mat-drawer>
+
+  <main>
+    <ng-content></ng-content>
+  </main>
+
+
+</mat-drawer-container>

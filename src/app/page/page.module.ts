@@ -7,6 +7,7 @@ import { PageMessageComponent } from './page-message.component';
 import { PageRoomComponent } from './page-room.component';
 import { PageLoginComponent } from './page-login.component';
 import { PageProfileComponent } from './page-profile.component';
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -18,7 +19,7 @@ import { PageProfileComponent } from './page-profile.component';
     PageProfileComponent
   ],
   imports: [
-    CommonModule,
+    RouterModule,
     FeaturesModule,
     SharedModule
   ]

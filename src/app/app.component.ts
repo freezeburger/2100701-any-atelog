@@ -12,15 +12,16 @@ export class AppComponent {
 
   constructor(
     // @Inject(DispatcherService) public dispatcher:DispatcherService
-    public dispatcher:DispatcherService
+    // public dispatcher:DispatcherService
   ){
 
-    this.dispatcher.dispacth({type:ActionRoom.ROOM_GET_LIST, data:null})
+    // this.dispatcher.dispacth({type:ActionRoom.ROOM_GET_LIST, data:null})
 
   }
 
-  connect(){
+  /* connect(){
     this.dispatcher.dispacth({type:ActionUser.USER_CONNECT, data:null})
-  }
+  } */
+
 
 }

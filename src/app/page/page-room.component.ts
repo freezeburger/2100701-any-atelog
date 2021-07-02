@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-room',
   template: `
-    <p>
-      page-room works!
-    </p>
+   <app-page-base>
+     <app-room></app-room>
+   </app-page-base>
   `,
   styles: [
   ]

@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-message',
   template: `
-    <p>
-      page-message works!
-    </p>
+   <app-page-base>
+     <app-message></app-message>
+     <app-message-writer></app-message-writer>
+   </app-page-base>
   `,
   styles: [
   ]

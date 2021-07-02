@@ -52,4 +52,18 @@
 * Injection de Composant 🦄 (Action)
 * Testing 🦄
 
-# JavaScript Modules
+# JavaScript Strucuration Applicative
+
+Objectifs:
+
+* Découper code en unité (maintenance)
+* Simplifier la communication entre composant
+* Séparer les Services et le Composant
+
+# JavaScript TypeScript - Méthodologie
+
+> Utiliser les interfaces pour :
+
+* Normaliser 
+* Décrire les données manipulées
+* Décrire la façon de manipuler les données

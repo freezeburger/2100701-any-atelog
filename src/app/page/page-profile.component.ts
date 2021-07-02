@@ -3,9 +3,9 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-page-profile',
   template: `
-    <p>
-      page-profile works!
-    </p>
+   <app-page-base>
+     <app-profile></app-profile>
+   </app-page-base>
   `,
   styles: [
   ]
