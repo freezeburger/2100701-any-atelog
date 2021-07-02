@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ButtonComponent implements OnInit {
 
+  color = 'primary';
+
   constructor() { }
 
   ngOnInit(): void {

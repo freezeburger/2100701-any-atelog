@@ -1,1 +1,11 @@
-<ui-button></ui-button>
+
+<pre>
+  {{ dispatcher.action$ | async |  json }}
+</pre>
+
+<hr>
+<pre>
+  {{ dispatcher.state$ | async |  json }}
+</pre>
+
+<ui-button (click)="connect()"></ui-button>
