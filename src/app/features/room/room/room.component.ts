@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActionRoom } from 'src/app/core/actions/action-room.enum';
+import { DispatcherService } from 'src/app/core/services/facade/dispatcher.service';
 
 @Component({
   selector: 'app-room',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RoomComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public dispatcher:DispatcherService
+  ){}
 
-  ngOnInit(): void {
+  ngOnInit(){
+    this.dispatcher.dispacth({type:ActionRoom.ROOM_GET_LIST, data:null})
   }
 
 }

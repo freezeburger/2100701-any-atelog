@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActionUser } from 'src/app/core/actions/action-user.enum';
+import { userConnect } from 'src/app/core/actions/action-creators';
 import { DispatcherService } from 'src/app/core/services/facade/dispatcher.service';
 
 @Component({
@@ -15,7 +15,7 @@ export class LoginComponent {
   ){}
 
   connect(){
-    this.dispatcher.dispacth({type:ActionUser.USER_CONNECT, data:null})
+    this.dispatcher.dispacth( userConnect( {name:'Bob',password:''}) )
   }
 
 }
