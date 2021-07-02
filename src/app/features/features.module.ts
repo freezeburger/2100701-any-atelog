@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RoomModule } from './room/room.module';
 import { LoginModule } from './login/login.module';
-import { ProfileModule } from './profile/profile.module';
+// import { ProfileModule } from './profile/profile.module';
 import { MessageModule } from './message/message.module';
 
 
@@ -9,7 +9,7 @@ import { MessageModule } from './message/message.module';
   exports: [
     RoomModule,
     LoginModule,
-    ProfileModule,
+    // ProfileModule,
     MessageModule
   ]
 })
