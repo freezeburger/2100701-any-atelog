@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PageModule } from './page/page.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
+import { UserEffect } from './core/services/facade/user.effect';
 
 @NgModule({
   declarations: [

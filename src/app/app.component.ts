@@ -8,20 +8,4 @@ import { DispatcherService } from './core/services/facade/dispatcher.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
-
-  constructor(
-    // @Inject(DispatcherService) public dispatcher:DispatcherService
-    // public dispatcher:DispatcherService
-  ){
-
-    // this.dispatcher.dispacth({type:ActionRoom.ROOM_GET_LIST, data:null})
-
-  }
-
-  /* connect(){
-    this.dispatcher.dispacth({type:ActionUser.USER_CONNECT, data:null})
-  } */
-
-
-}
+export class AppComponent {}

@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-
-
+import { EffectModule } from './effect.module';
+import { RoomEffect } from './services/facade/room.effect';
+import { UserEffect } from './services/facade/user.effect';
 
 @NgModule({
-  declarations: [],
-  imports: [
-    CommonModule
+  imports:[
+    EffectModule.registerEffects([UserEffect ,RoomEffect ])
   ]
 })
-export class CoreModule { }
+export class CoreModule {}
+

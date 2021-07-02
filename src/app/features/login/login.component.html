@@ -1,1 +1,11 @@
-<p>login works!</p>
+<pre>
+  {{ dispatcher.action$ | async |  json }}
+</pre>
+
+<hr>
+<pre>
+  {{ dispatcher.state$ | async |  json }}
+</pre>
+
+<ui-button (click)="connect()">Login</ui-button>
+
