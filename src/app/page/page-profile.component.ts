@@ -4,7 +4,7 @@ import { Component, OnInit } from '@angular/core';
   selector: 'app-page-profile',
   template: `
    <app-page-base>
-     <app-profile></app-profile>
+     <router-outlet></router-outlet>
    </app-page-base>
   `,
   styles: [

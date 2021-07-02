@@ -15,7 +15,7 @@ export class LoginComponent {
   ){}
 
   connect(){
-    this.dispatcher.dispacth( userConnect( {name:'Bob',password:''}) )
+    this.dispatcher.dispacth( userConnect( {name:'Renaud',password:''}) );
   }
 
 }

@@ -15,8 +15,8 @@ export class UserGuard implements CanActivate {
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot): Observable<boolean | UrlTree> | Promise<boolean | UrlTree> | boolean | UrlTree {
 
-    // return this.dispacther.state$.pipe( map( state => state.connectedUser !== null ) );
-    return true;
+    return this.dispacther.state$.pipe( map( state => state.connectedUser !== null ) );
+    // return true;
   }
 
 }

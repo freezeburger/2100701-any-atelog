@@ -33,7 +33,7 @@ export class DispatcherService implements Dispatcher<ApplicationState> {
   ) { }
 
   dispacth(action: Action): void {
-    // console.table(action);
+    console.table(action);
     this.action$.next(action);
   }
 

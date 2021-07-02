@@ -24,7 +24,13 @@ const routes: Routes = [
   {
     path:'profile',
     component:PageProfileComponent,
-    canActivate:[UserGuard]
+    canActivate:[UserGuard],
+    children:[
+      {
+        path:'',
+        loadChildren: () => import('./features/profile/profile.module').then(m => m.ProfileModule)
+      }
+    ]
   },
   {
     path:'**',
@@ -37,4 +43,4 @@ const routes: Routes = [
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
